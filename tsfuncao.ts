@@ -205,29 +205,29 @@ import readline from 'readline-sync';
 /*10-Escreva uma função chamada verificarPrimo que receba um número como parâmetro e exiba no console se o 
      número é primo ou não.*/
 
- /* 
+ 
  //Verifique se um número é primo.
 
-let num10= parseInt(readline.question(`digite um número inteiro para verificarmos se ele é um numero primo - `))
+// let num10: number = parseInt(readline.question(`digite um número inteiro para verificarmos se ele é um numero primo - `))
 
-function verificarPrimo(num){
-    let cont=0, div=2
-    do {
-        if (num%div==0) {
-            cont= ++cont;    }
-            div= ++div;  
-    }  while (div<num && cont==0);
-    if (cont !=0){
-        console.log(num,'não é um numero primo')
+// function verificarPrimo(num: number): void {
+//     let cont: number = 0, div=2
+//     do {
+//         if (num%div==0) {
+//             cont= ++cont;    }
+//             div= ++div;  
+//     }  while (div<num && cont==0);
+//     if (cont !=0){
+//         console.log(num,'não é um numero primo')
         
-    }
-    else {
-        console.log(num,'é um número primo')
+//     }
+//     else {
+//         console.log(num,'é um número primo')
         
-    }
-}
+//     }
+// }
 
-verificarPrimo(num10)
+// verificarPrimo(num10)
 
 
 // VALORES PADRÂO ********
@@ -237,74 +237,73 @@ verificarPrimo(num10)
 a saudação "Olá, [nome]!" utilizando um valor padrão para nome caso nenhum seja fornecido.
 */
 
-/*
-function exibirSaudacao(nome,saudacao="Hello"){
-    console.log(`${saudacao} ${nome} !!!`)
-}
-let aluno="José"
-let msg="Bom dia"
 
-exibirSaudacao(aluno)
-// exibe Hello José !!!
+// function exibirSaudacao(nome: string,saudacao: string = "Hello"): void {
+//     console.log(`${saudacao} ${nome} !!!`)
+// }
+// let aluno: string ="José"
+// let msg: string ="Bom dia"
 
-exibirSaudacao(aluno,msg)
-// exibe Bom dia José !
-*/
+// exibirSaudacao(aluno)
+// // exibe Hello José !!!
+
+// exibirSaudacao(aluno,msg)
+// // exibe Bom dia José !
 
 
 /*
 2-Escreva uma função chamada calculadora que receba dois números (num1 e num2) e um operador matemático (operacao) 
 como parâmetros. A função deve realizar a operação matemática entre 
 num1 e num2 (por exemplo, adição, subtração, multiplicação, divisão) com um valor padrão de operação sendo "+".
-
-/*
-const readline = require("readline-sync")
-    let operacao= readline.question('Digite o Tipo de Operação (+ ,- ,/ , *) - ')
-    let num01 = parseInt(readline.question('Digite o 1° número - '))
-    let num02 = parseInt(readline.question('Digite o 2° número - ')) 
-    
-    function imprimirTabuada(num1,op='+',num2){
-        switch (op){
-            case "+" :
-               console.log(`${num1} ${op} ${num2} = ${num1+num2}`)
-               break
-            case "-" :
-               console.log(`${num1} ${op} ${num2} = ${num1-num2}`)
-               break
-            case "/" :
-               console.log(`${num1} ${op} ${num2} = ${num1/num2}`)
-               break
-            case "*" :
-               console.log(`${num1} ${op} ${num2} = ${num1*num2}`)
-                break
-            default :
-               console.log(`operação invalida`)
-                
-        }
-        
-    }
-    
-imprimirTabuada(num01,operacao,num02)
-
 */
+
+
+//     let operacao: string = readline.question('Digite o Tipo de Operação (+ ,- ,/ , *) - ')
+//     let num01: number = parseInt(readline.question('Digite o 1° número - '))
+//     let num02: number  = parseInt(readline.question('Digite o 2° número - ')) 
+    
+//     function imprimirTabuada(num1: number,op: string = '+',num2: number): void {
+//         switch (op){
+//             case "+" :
+//                console.log(`${num1} ${op} ${num2} = ${num1+num2}`)
+//                break
+//             case "-" :
+//                console.log(`${num1} ${op} ${num2} = ${num1-num2}`)
+//                break
+//             case "/" :
+//                console.log(`${num1} ${op} ${num2} = ${num1/num2}`)
+//                break
+//             case "*" :
+//                console.log(`${num1} ${op} ${num2} = ${num1*num2}`)
+//                 break
+//             default :
+//                console.log(`operação invalida`)
+                
+//         }
+        
+//     }
+    
+// imprimirTabuada(num01,operacao,num02)
+
+
 
 /*
 3-Crie uma função chamada contagemRegressiva que aceite um parâmetro inicio para iniciar a contagem regressiva. 
 A função deve exibir no console uma contagem regressiva a partir do número fornecido até 1, utilizando um valor 
 padrão de início igual a 10.
-
-/*
-function contagemRegressiva(start="10"){
-    for (cont=start; cont>=0; cont--){
-        console.log(cont)
-    }
-}
-    
- let st=15 
- 
-contagemRegressiva()   
-contagemRegressiva(st)
 */
+
+// function contagemRegressiva(start: number = 10): void {
+//     for (let cont: number =start; cont>=0; cont--){
+//         console.log(cont)
+//     }
+// }
+    
+//  let st=15 
+ 
+// contagemRegressiva()   
+// contagemRegressiva(st)
+
 
 /*
 1-Escreva uma função chamada apresentacao que aceite três parâmetros: nome, idade e profissao. 
@@ -312,21 +311,21 @@ A função deve exibir no console uma mensagem de apresentação no formato "Ol�
 tenho [idade] anos e sou [profissao].", utilizando valores padrão para os parâmetros caso nenhum seja fornecido. 
 */
 
-/*
-const readline = require("readline-sync")
- let nome = readline.question('Digite seu nome -')
- let idade = readline.question('Digite sua idade -')
- let profissao = readline.question('Digite sua profissão - ')
+//  let nome: string = readline.question('Digite seu nome -')
+//  let idade: number = readline.question('Digite sua idade -')
+//  let profissao: string = readline.question('Digite sua profissão - ')
  
- function apresentacao(nom="Fulano",id="16",prof="estudante"){
-     console.log(`Meu nome é ${nom}, tenho ${id} anos e sou ${prof}`)
- }
+//  function apresentacao(nom: string ="Fulano",id:number =16,prof: string ="estudante"){
+//      console.log(`Meu nome é ${nom}, tenho ${id} anos e sou ${prof}`)
+//  }
  
- apresentacao(nome,idade,profissao)
- apresentacao(nome,idade)
- apresentacao(nome)
- apresentacao()
-*/
+//  apresentacao(nome,idade,profissao)
+//  apresentacao(nome,idade)
+//  apresentacao(nome)
+//  apresentacao()
+//  // teste do que acontece ao digitar uma string em uma varavel number
+
+// console.log(idade*2)
 
 
 /*
@@ -334,91 +333,91 @@ const readline = require("readline-sync")
 um parâmetro estilo para o estilo da mensagem (por exemplo, "normal", "negrito", "itálico"), com 
 um valor padrão de estilo sendo "normal". A função deve exibir no console o texto fornecido com o 
 estilo especificado.
-/*
-/*
-const readline = require("readline-sync")
-let texto = readline.question('Digite o texto - ')
-let estilo = readline.question('Digite o estilo desejado (normal, negrito ou itálico) - ')
-
- function mesagemPersonalizada(msg,est="normal"){
-     console.log(`O texto "${msg}" está em estilo ${est}`)
- }
- 
- mesagemPersonalizada(texto,estilo)
- mesagemPersonalizada(texto)
 */
+
+
+// let texto: string = readline.question('Digite o texto - ')
+// let estilo: string  = readline.question('Digite o estilo desejado (normal, negrito ou itálico) - ')
+
+//  function mesagemPersonalizada(msg: string,est: string ="normal"): void {
+//      console.log(`O texto "${msg}" está em estilo ${est}`)
+//  }
+ 
+//  mesagemPersonalizada(texto,estilo)
+//  mesagemPersonalizada(texto)
+
 
 
 /*****Funçoes com Return */
 
 //Exercício Avulso
-/*
-function criarMensagemDeSaudacao(nome,saudacao='Hello'){
-    const mensagem = `${saudacao} ${nome}`
-    return mensagem;
+
+// function criarMensagemDeSaudacao(nome: string ,saudacao: string ='Hello') {
+//     const mensagem = `${saudacao} ${nome}`
+//     return mensagem;
     
-}
+// }
 
-let mensagemDeSaudacao= criarMensagemDeSaudacao("Ana")
-console.log(mensagemDeSaudacao)
+// let mensagemDeSaudacao: string = criarMensagemDeSaudacao("Ana")
+// console.log(mensagemDeSaudacao)
 
-mensagemDeSaudacao= criarMensagemDeSaudacao("Ana","Bom dia")
-console.log(mensagemDeSaudacao)
-*/
+// mensagemDeSaudacao= criarMensagemDeSaudacao("Ana","Bom dia")
+// console.log(mensagemDeSaudacao)
+
 
 /* SLIDES LPM01A05 sl 39
 1-Crie uma função chamada somar que aceite dois números como parâmetros e retorne a soma deles.
+*/
 
 
-const readline = require("readline-sync")
-let num1 = parseInt(readline.question('Digite um número inteiro - '))
-let num2 = parseInt(readline.question('Digite outro número inteiro - '))
+// let num1: number = parseInt(readline.question('Digite um número inteiro - '))
+// let num2: number = parseInt(readline.question('Digite outro número inteiro - '))
 
-function somaNumeros(n1,n2){
-    let soma=n1+n2
-    return soma;
-}
+// function somaNumeros(n1: number ,n2: number ){
+//     let soma=n1+n2
+//     return soma;
+// }
 
-console.log(`${num1}+${num2}=${somaNumeros(num1,num2)}`)
-
-
-2-Escreva uma função chamada ehPar que aceite um número como parâmetro e retorne true se o número for par 
-e false caso contrário.
-
-
-const readline = require("readline-sync")
-let num = parseInt(readline.question('Digite um número inteiro - '))
-let resp
-function ehPar(n){
-    return n%2==0;
-}
-
-if (ehPar(num)){
-    resp=`${num} é par`
-    }else{
-        resp=`${num} é impar`
-    }
-   
-console.log(resp)
-
-
-3-Crie uma função chamada maiorNumero que receba três números como parâmetros e retorne o maior deles.
-##### NÃO ESTÁ FUNCIONANDO ####
+// console.log(`${num1}+${num2}=${somaNumeros(num1,num2)}`)
 
 /*
-const readline = require("readline-sync")
-let num1 = parseFloat(readline.question("Digite o 1° número inteiro - "))
-let num2 = parseInt(readline.question("Digite o 2° número inteiro - "))
-let num3 = parseInt(readline.question("Digite o 3° número inteiro - "))
-
-const entrada=[num1,num2,num3]
-
-function maiorNumero(ent){
-    return (maior=Math.max.apply(null,ent))
-}
-
-console.log(`o maior numero é ${maiorNumero(entrada)}`)
+2-Escreva uma função chamada ehPar que aceite um número como parâmetro e retorne true se o número for par 
+e false caso contrário.
 */
+
+
+// let num: number = parseInt(readline.question('Digite um número inteiro - '))
+// let resp: string
+// function ehPar(n: number){
+//     return n%2==0;
+// }
+
+// if (ehPar(num)){
+//     resp=`${num} é par`
+//     }else{
+//         resp=`${num} é impar`
+//     }
+   
+// console.log(resp)
+
+/*
+3-Crie uma função chamada maiorNumero que receba três números como parâmetros e retorne o maior deles.
+*/
+
+
+// let num1: number = parseFloat(readline.question("Digite o 1° número inteiro - "))
+// let num2: number = parseInt(readline.question("Digite o 2° número inteiro - "))
+// let num3: number = parseInt(readline.question("Digite o 3° número inteiro - "))
+
+// const entrada: Array<number> = [num1,num2,num3]
+
+// function maiorNumero(ent: Array<number>){
+//     let maior: number = Math.max.apply(null,ent)
+//     return maior
+// }
+
+// console.log(`o maior numero é ${maiorNumero(entrada)}`)
+
 
 /*
 4-Escreva uma função chamada calcularIMC que receba o peso e a altura de uma pessoa como parâmetros e 
@@ -426,16 +425,16 @@ retorne o índice de massa corporal (IMC) calculado.
 */
 
 
-/*
-const leiauser = require("readline-sync")
-let peso = parseFloat(leiauser.question("Digite o seu peso exato - "))
-let altura = parseFloat(leiauser.question("Digite o sua altura exata em metros - "))
+// const leiauser = require("readline-sync")
+// let peso: number = parseFloat(leiauser.question("Digite o seu peso exato - "))
+// let altura: number = parseFloat(leiauser.question("Digite o sua altura exata em metros - "))
 
-function calcularIMC(pes,alt){
-    return (IMC=pes/(alt^2))
-}
+// function calcularIMC(pes: number,alt: number){
+//     let IMC: number = pes/(alt**2)
+//     return IMC
+// }
 
-console.log(`o seu peso é ${peso}, altura ${altura} e seu IMC é ${calcularIMC(peso,altura).toFixed(1)}`)
-*/
+// console.log(`o seu peso é ${peso}, altura ${altura} e seu IMC é ${calcularIMC(peso,altura).toFixed(1)}`)
+
 
 
